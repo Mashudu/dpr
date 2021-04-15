@@ -15,7 +15,7 @@
             <li class="nav-item">
               <a class="nav-link 
               @if($loop->first) active show @endif" 
-              data-bs-toggle="tab" href="#tab-{{ $glossary->id}}">{{ $glossary->term }}</a>
+              data-bs-toggle="tab" href="#tab-{{ $glossary->id}}">{{ $glossary->name }}</a>
             </li>
             @endforeach
            
@@ -29,8 +29,8 @@
           @if($loop->first) active show @endif"  id="tab-{{ $glossary->id }}">
             <div class="row">
               <div class="col-lg-12 details order-2 order-lg-1">
-                <h3>{{ $glossary->term }}</h3>
-                <p class="font-italic">{{ $glossary->description }}</p>
+                <h3>{{ $glossary->name }}</h3>
+                <p class="font-italic">{!! $glossary->description !!}</p>
                 
               </div>
               

@@ -24,8 +24,8 @@
      @foreach ($glossaries as $glossary )
      <tr>
         <td scope="row">{{$glossary->id }}</td>
-        <td>{{$glossary->term }}</td>
-        <td>{{$glossary->description }}</td>
+        <td>{{$glossary->name }}</td>
+        <td> {!! $glossary->description !!}</td>
         <td>
         <a class="btn btn-sm btn-primary" href="{{ route('admin.glossary.edit',$glossary->id) }}" role="button">Edit</a>
         <button type="button" class="btn btn-sm btn-danger"

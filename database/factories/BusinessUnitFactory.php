@@ -24,7 +24,8 @@ class BusinessUnitFactory extends Factory
         return [
             //
             'name' => $this->faker->company,  
-            'description' => $this->faker->company,          
+            'description' => $this->faker->company,   
+            'area_name' => "VSA",             
         ];
     }
 }

@@ -41,7 +41,7 @@ class GlossaryController extends Controller
     {
         //
          $request->validate([
-            'term'=>'required|max:255',
+            'name'=>'required|max:255',
             'description'=>'required'
 
         ]);
@@ -89,14 +89,14 @@ class GlossaryController extends Controller
     {
         //
         $request->validate([
-            'term'=>'required|max:255',
+            'name'=>'required|max:255',
             'description'=>'required'
 
         ]);
         //
         $glossary = Glossary::find($id);
         if(!$glossary){
-            $request->session()->flash('error', 'You cannot  edit thisGlossary term');
+            $request->session()->flash('error', 'You cannot  edit this Glossary term');
             return redirect(route('admin.glossary.index'));
         }
         $glossary->update($request->except(['_token']));

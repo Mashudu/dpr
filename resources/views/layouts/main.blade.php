@@ -146,7 +146,7 @@ else{
                                                  
                         <li><a href="#">Latest News</a></li>
                         <li><a href="{{ route('pages.glossary') }}">Glossay</a></li>
-                        <li><a href="{{ route('pages.contact') }}">Contact</a></li>
+                        <li><a href="{{ route('contact.index') }}">Contact</a></li>
                         <!-- Send  to the  far right  -->
 
 

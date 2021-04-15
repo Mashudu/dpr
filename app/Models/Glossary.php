@@ -9,7 +9,7 @@ class Glossary extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'term',
+        'name',
         'description'
        
          
