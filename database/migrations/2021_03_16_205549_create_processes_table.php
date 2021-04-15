@@ -23,6 +23,7 @@ class CreateProcessesTable extends Migration
             $table->string('status');
             $table->integer('user_id');
             $table->integer('functional_area_id');
+            $table->integer('priority')->nullable();
             $table->timestamps();
  
 

@@ -17,6 +17,9 @@ class CreateBusinessUnitsTable extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
+            $table->string('area_name')->nullable();
+            $table->string('bu_name')->nullable();
+            $table->string('image_url')->nullable();
             $table->timestamps();
         });
     }

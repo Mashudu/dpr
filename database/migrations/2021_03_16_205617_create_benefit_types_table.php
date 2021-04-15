@@ -17,6 +17,8 @@ class CreateBenefitTypesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
+            $table->string('unit_left')->default('');
+            $table->string('unit_right')->default('');
             $table->timestamps();
         });
     }

@@ -29,10 +29,10 @@ class AppServiceProvider extends ServiceProvider
         //
         
        // $bus = DB::select('SELECT * FROM business_units where i =?', [2]);
-       $saBus = BusinessUnit::all()->where('area','VSA');
-       $lesothoBus = BusinessUnit::all()->where('area','LES');
-       View::share( 'saBus', $saBus );
-       View::share( 'lesothoBus', $lesothoBus );
+  //$saBus = BusinessUnit::all()->where('area','VSA');
+   //   $lesothoBus = BusinessUnit::all()->where('area','LES');
+   //   View::share( 'saBus', $saBus );
+  ///    View::share( 'lesothoBus', $lesothoBus );
  
 
     }
