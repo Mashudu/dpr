@@ -52,7 +52,7 @@ Route::get('api/getProcessesByFunctionalAreaSummary/{id}',[BusinessUnitControlle
 
 //custom pages 
 Route::get('glossary',[PagesController::class,'glossary'])->name('pages.glossary');
-Route::get('contact',[PagesController::class,'contact'])->name('pages.contact');
+Route::resource('contact',PagesController::class);
 
 
 Route::get('process/{id}',[ControllersProcessController::class,'getProcessInfo']);

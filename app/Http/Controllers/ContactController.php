@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\BusinessUnit;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -15,6 +16,8 @@ class ContactController extends Controller
     public function index()
     {
         //
+        $businessUnits = BusinessUnit::all();
+        return  view('contact.index')->with(compact('businessUnits'));
     }
 
     /**
