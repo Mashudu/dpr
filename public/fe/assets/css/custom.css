@@ -1,0 +1,54 @@
+.page-link {
+    position: relative;
+    display: block;
+    /*color: #0d6efd;*/
+    color: #d9232d;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #d9232d;;
+    border-color: #d9232d;;
+}
+
+/*set data  to  5  items  */
+        .col-xs-equal,
+        .col-sm-equal,
+        .col-md-equal,
+        .col-lg-equal {
+            position: relative;
+            min-height: 1px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+         .col-xs-equal {
+            width: 20%;
+            float: left;
+        }
+
+        @media (min-width: 768px) {
+            .col-sm-equal {
+                width: 20%;
+                float: left;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-md-equal {
+                width: 20%;
+                float: left;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .col-lg-equal {
+                width: 20%;
+                float: left;
+            }
+        }
+/*set data  to  5  items end    */

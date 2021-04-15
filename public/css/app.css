@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Vodafone Rg";
+  src: url("fonts/VodafoneRg.ttf");
+  
+  } 
+
+  body {
+      font-family: 'Vodafone Rg', sans-serif !important;
+      font-size: 16px !important;
+      background: #AFAFAF;
+
+  }
+
+.bg-red{
+  background-color:red !important;
+  color:white !important;
+}
+.nav-link{
+ 
+  color:white !important;
+  font-weight: bold;
+}
+.navbar-brand{
+  color:white !important;
+  font-weight: bold;
+}
+
+.nav-link-auth{
+ 
+  color:white !important;
+
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.card{
+  box-shadow: 0 2px 4px rgba(204,204,204,0.8);
+  padding:20px 40px;
+}
+h1{
+  margin: botton 30px;
+}
+
